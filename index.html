@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><meta name="description" content="Um pouco de café. Um pouco de coragem. Uma noite ilustrada e interativa com Cecilia."><title>Cecilia — Uma noite, uma possibilidade.</title></head>
+<body>
+  <div id="app">
+    <header class="site-header"><a class="wordmark" href="/" aria-label="Cecilia — início">Cecilia<span>✳</span></a><span class="edition">UMA HISTÓRIA DE AMOR INTERATIVA</span><button class="text-button" id="open-log" aria-haspopup="dialog">Lembranças da noite <span aria-hidden="true">↗</span></button></header>
+    <main>
+      <section class="intro"><div><p class="eyebrow"><span></span> UM ENCONTRO AO ACASO · CAPÍTULO UM</p><h1>Algumas noites<br>são um <em>começo.</em></h1></div><p class="intro-copy">Um café desconhecido. Uma sensação familiar.<br>Sem pressa. Veja aonde a conversa leva.</p></section>
+      <section class="novel" aria-label="Romance visual interativo">
+        <div class="scene-art">
+          <div id="scene" aria-hidden="true"></div><div class="scene-shade" aria-hidden="true"></div>
+          <div class="scene-top"><span class="location-pill"><span aria-hidden="true">☼</span> <span id="location">O CAFÉ DA ESQUINA</span></span><span class="scene-caption">uma noite, uma possibilidade</span></div>
+          <div class="scene-index" aria-hidden="true">01 / 03 <span>—</span> UM POUCO MAIS PERTO</div>
+        </div>
+        <div id="story-panel" class="story-panel" aria-live="polite" aria-atomic="true"><p class="eyebrow">SÓ UM INSTANTE</p><h2>Preparando o cenário…</h2><p>Encontrando um cantinho da cidade para você.</p></div>
+      </section>
+      <div class="player-bar"><div class="progress-wrap"><span id="progress-label">SUA NOITE</span><div class="progress-track"><div id="progress-fill"></div></div><span id="progress-count">00</span></div><div class="player-actions"><button id="motion-toggle" class="text-button" aria-pressed="false">Animações ativadas</button><span class="bar-divider"></span><button id="restart" class="text-button">↺ &nbsp; Recomeçar</button></div></div>
+      <div class="understory"><p><span aria-hidden="true">♡</span> Não existem respostas perfeitas. Só as suas.</p></div>
+    </main>
+    <footer><span>UMA PEQUENA HISTÓRIA SOBRE O ESPAÇO ENTRE DUAS PESSOAS.</span><span>Feita para um momento sem pressa. <i aria-hidden="true">✳</i></span></footer>
+  </div>
+  <dialog id="notes-dialog" aria-labelledby="notes-title"><div class="dialog-heading"><div><p class="eyebrow">PEQUENAS COISAS PARA LEMBRAR</p><h2 id="notes-title">Lembranças da noite</h2></div><button class="icon-button" id="close-notes" aria-label="Fechar lembranças da noite">×</button></div><div id="notes-content"></div></dialog>
+  <dialog id="restart-dialog" aria-labelledby="restart-title"><p class="eyebrow">OUTRO ENCONTRO AO ACASO</p><h2 id="restart-title">Começar a noite de novo?</h2><p>Sua conversa e seu personagem serão reiniciados.</p><div class="dialog-actions"><button id="cancel-restart" class="secondary-button">Ficar aqui</button><button id="confirm-restart" class="primary-button">Começar de novo ↗</button></div></dialog>
+  <script type="module" src="/src/main.js"></script>
+</body></html>

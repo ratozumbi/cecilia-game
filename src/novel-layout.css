@@ -1,0 +1,26 @@
+/* Art and conversation share one frame, without overlapping. */
+main .novel {
+  height: auto;
+  background: #fffaf4;
+}
+
+.scene-art {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 8 / 5;
+}
+
+.novel .story-panel {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  max-height: none;
+  overflow: visible;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #e7d8cc;
+  border-radius: 0;
+  background: #fffaf4;
+  backdrop-filter: none;
+  box-shadow: none;
+}

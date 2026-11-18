@@ -1,0 +1,55 @@
+# Environment and private credentials (keep only the example template)
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+
+# Dependencies, generated builds and caches
+node_modules/
+dist/
+coverage/
+.cache/
+.vite/
+*.tsbuildinfo
+
+# Local application data and database exports
+data/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.dump
+*.sql.gz
+
+# Cloud deployment and CLI state
+.wrangler/
+.vercel/
+supabase/.temp/
+supabase/.branches/
+
+# Test output and logs
+playwright-report/
+test-results/
+blob-report/
+*.log
+
+# Personal editor, Obsidian and operating-system state
+.idea/
+.vscode/
+obsidian/.obsidian/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.tmp
+*.bak
+*~
